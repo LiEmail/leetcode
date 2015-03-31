@@ -97,7 +97,7 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
 \subsubsection{代码}
 \begin{Code}
 //LeetCode, Merge k Sorted Lists
-// 时间复杂度O(n1+n2+...)，空间复杂度O(1)
+// 时间复杂度O((n1+n2+...)*K)，空间复杂度O(1)  -- 可利用分治思想，时间复杂度是O(N*logK),空间复杂度是O(K).
 class Solution {
 public:
     ListNode *mergeKLists(vector<ListNode *> &lists) {
